@@ -20,9 +20,12 @@ public class Cal {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter a number : ");
             int num1 = sc.nextInt();
-            System.out.println("Enter operation : ");
-            String opr = sc.next();
-            operator = opr;
+            if(i != n-1){
+                System.out.println("Enter operation : ");
+                String opr = sc.next();
+                operator = opr;
+            }
+
 
             switch (operator.toUpperCase()){
                 case "ADD" ->{
